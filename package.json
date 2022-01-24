@@ -1,0 +1,26 @@
+{
+  "name": "otel-js",
+  "version": "1.0.0",
+  "description": "various otel-js stuff",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r ./tracing.js app.js",
+    "start-2": "node -r ./tracing.js app-2.js",
+    "start-console-auto": "node -r ./tracing-console-auto.js app.js",
+    "start-console-ssp": "node -r ./tracing-console-ssp.js app.js",
+    "start-bsp-2": "node -r ./tracing-bsp.js app-2.js"
+  },
+  "author": "jamie",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.1",
+    "@opentelemetry/api": "^1.0.4",
+    "@opentelemetry/auto-instrumentations-node": "^0.27.1",
+    "@opentelemetry/exporter-trace-otlp-grpc": "^0.27.0",
+    "@opentelemetry/instrumentation": "^0.27.0",
+    "@opentelemetry/sdk-node": "^0.27.0",
+    "@opentelemetry/sdk-trace-base": "^1.0.1",
+    "@opentelemetry/sdk-trace-node": "^1.0.1",
+    "express": "^4.17.2"
+  }
+}
